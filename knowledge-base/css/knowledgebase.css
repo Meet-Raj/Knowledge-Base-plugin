@@ -1,0 +1,295 @@
+#mepr-account-nav .mepr-nav-item.knowledge-base a::before {
+	content: "\f02d" !important;
+	font-family: "Font Awesome 6 Free" !important;
+	font-weight: 900;
+	font-size: 18px;
+	width: 20px;
+	text-align: center;
+}
+
+.data_not_found {
+	display: block;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #333;
+	text-transform: capitalize;
+	text-align: center;
+	border: 2px solid #eee;
+}
+
+.knowledge-live-search {
+	max-width: 680px;
+	margin: auto;
+	position: relative;
+}
+.knowledge-live-search input {
+	margin-bottom: 0 !important;	
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	padding-left: 30px !important;
+}
+.knowledge-live-search .btn-green,
+.mp_wrapper a.back-button {
+	color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    font-weight: 600;
+    background-color: #00573d;
+    border: 1px solid #00573d;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+	box-shadow: none !important;
+	text-decoration: none !important;
+}
+
+.mp_wrapper a.back-button:hover,
+.mp_wrapper a.back-button:focus,
+.knowledge-live-search .btn-green:focus,
+.knowledge-live-search .btn-green:hover {
+	color: #fff;
+    background-color: #1cad75;
+    border-color: #1cad75;
+}
+
+.knowledge-search-results {
+	position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 380px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.knowledge-search-results::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius:10px;
+}
+ 
+.knowledge-search-results::-webkit-scrollbar-track {
+  background-color:rgba(28,173, 117,0.2);
+    border-radius:10px;
+}
+ 
+.knowledge-search-results::-webkit-scrollbar-thumb {
+  background-color: #1cad75;
+  border-radius:10px;
+}
+
+ul.live-search-results {	
+	margin: 0;
+	padding: 0;
+	list-style: none;		
+}
+ul.live-search-results li {	
+	border-bottom: 1px solid #eee;
+}
+ul.live-search-results li:last-child {
+	border-bottom: none;
+}
+ul.live-search-results li a {
+	display: block;
+	padding: 10px 15px;	
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+	background-color: #fff;
+	text-transform: capitalize;
+	text-decoration: none !important;
+}
+ul.live-search-results li a:focus,
+ul.live-search-results li a:hover {
+	color: #00573d;
+}
+ul.live-search-results li a i {	
+	width: 20px;
+	font-size: 16px;
+	color: #1cad75;
+	text-align: center;
+	margin-right: 10px;
+	font-style: normal !important;
+}
+
+.knowledge-departments ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.knowledge-departments ul li {	
+	margin: 5px 10px;
+}
+.knowledge-departments ul li a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	padding: 5px 15px;
+	border-radius: 8px;
+	transition: 0.3s linear;
+}
+
+.knowledge-departments ul li a:focus,
+.knowledge-departments ul li a:hover,
+.knowledge-departments ul li a.active {
+	color: #fff;
+	background-color: #00573d;
+}
+
+
+.knowledge_title {
+	font-weight: bold !important;
+	font-size: 36px;
+	line-height: 60px;
+	color: #00573d;
+	padding-bottom: 0px;
+	margin-bottom: 20px;	
+	text-align: center;
+}
+
+.categorie-list {
+	padding: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-bottom: 30px;
+	height: calc(100% - 30px);
+}
+.categorie-list h3 {
+	font-weight: 600 !important;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1cad75;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.categorie-list h3 i {
+	width: 25px;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 5px;
+	color: #1cad75;
+	font-style: normal !important;
+}
+.categorie-list ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;	
+}
+.categorie-list ul li {
+	padding: 5px 0;
+	padding-left: 30px;
+	position: relative;
+}
+.categorie-list ul li::before {
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	content: "\f022";
+	font-weight: 400;
+	font-size: 16px;
+	font-family: "Font Awesome 6 Free";
+	color: #1cad75;
+}
+.categorie-list ul li a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+	text-transform: capitalize;
+	text-decoration: none !important;	
+	transition: 0.3s linear;
+}
+
+.categorie-list ul li a:focus,
+.categorie-list ul li a:hover {
+	color: #1cad75 !important;
+}
+.categorie-list ul li a:visited {
+	color: #00573d !important;
+}
+
+.knowledge-post-content {
+	max-width: 980px;
+	margin: auto;
+	padding: 15px 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.knowledge-post-content .post-title {
+	font-weight: 600 !important;
+	font-size: 36px;
+	line-height: 40px;
+	color: #00573d;
+	padding-bottom: 0px;
+	margin-bottom: 15px;	
+	text-transform: capitalize;
+}
+.knowledge-post-content ul.post-info {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.knowledge-post-content ul.post-info li:not(:last-child) {
+	padding-right: 15px;
+	margin-right: 15px;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.knowledge-post-content ul.post-info li {
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #666;
+}
+.knowledge-post-content ul.post-info li i {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	font-weight: 400;
+	font-size: 16px;	
+	color: #1cad75;
+	font-style: normal !important;
+}
+
+.knowledge-post-content .featured-image {
+	height: 380px;
+	overflow: hidden;
+	display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.knowledge-post-content .featured-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	
+}
+
+.knowledge-post-content .post-content {
+	font-size: 16px;
+	line-height: 28px;
+	color: #666;
+	text-align: justify;
+}
